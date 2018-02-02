@@ -17,11 +17,21 @@ class YouTubeDebugger extends React.Component{
   }
 
   handleBitClick = () => {
-    this.state.
+    this.setState({
+      bitrate: {
+        ..this.state.settings,
+        bitrate: 12
+      }
+    })
   }
 
   handleResClick = () => {
-
+    this.setState({
+      resolution: {
+        ..this.state.video,
+        resolution: '720p'
+      }
+    })
   }
 
   render(){
